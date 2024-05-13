@@ -1,0 +1,36 @@
+{
+  "name": "electron-web-browser",
+  "version": "1.0.0",
+  "description": "A minimal Electron web browser application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "browser"
+  ],
+  "author": "Yousef Alsbaihi",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "build": {
+    "appId": "com.iyosf.bw",
+    "productName": "Web Browser",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
